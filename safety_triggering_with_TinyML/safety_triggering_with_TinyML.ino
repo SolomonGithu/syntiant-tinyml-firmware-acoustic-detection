@@ -1,5 +1,5 @@
 #define Syntiant_TinyML A6 // connect Syntiant to A6 of Atmega328P
-// or use interrupt pins 
+// or use interrupt pins
 int Syntiant_val = 0; // variable to store the Logic Levels of D5
 #define Stat_Led 8
 
@@ -16,7 +16,7 @@ void loop() {
   // read status of A6
   Syntiant_val = analogRead(Syntiant_TinyML);
   //Serial.println(Syntiant_val);
-  
+
   if (Syntiant_val == 1023) {
     Serial.println("__ Accident Detected! __");
     digitalWrite(Stat_Led, HIGH);
@@ -24,10 +24,10 @@ void loop() {
   }
   else {
     digitalWrite(Stat_Led, LOW);
+  }
 
-    if (!interrupt_process) {
-      doSomething();
-    }
+  if (!interrupt_process) {
+    doSomething();
   }
 }
 void doSomething() {
