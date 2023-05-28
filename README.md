@@ -1,6 +1,8 @@
 ## Quick Start!
 You can find the public Edge Impulse project here:  [Acoustic Sensing of Worker Accidents](https://studio.edgeimpulse.com/public/111611/latest) .  To add this project into your account projects, click “Clone this project”  at the top of the window.
 
+Read up on the project's documentation on [Edge Impulse's page](https://www.edgeimpulse.com/blog/this-may-be-a-cry-for-help-detecting-worker-accidents-with-audio-classification) to help you get started on your own creation.
+
 ----
 ## Config build and flash
 
